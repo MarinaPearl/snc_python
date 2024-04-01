@@ -24,5 +24,7 @@ urlpatterns = [
     path('diplom/', views.diplom, name="home"),
     path('diplom_1/', views.diplom_1, name="home"),
     path('diplom_2/', views.diplom_2, name="home"),
-    path('diplom_3/', views.diplom_3, name="home")
+    path('diplom_3/', views.diplom_3, name="home"),
+    path('getProductWithCondition/', views.getProductWithCondition, name="home"),
+    path('getSetsHair/', views.getSetsHair, name="home"),
 ]

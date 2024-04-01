@@ -6,7 +6,7 @@
   </component>
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -17,12 +17,24 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="f428af88-a5b7-4c60-82ad-002a496b8c86">
-      <console name="Diplom" type="STANDARD" schema="" session="Main"><![CDATA[select
-    spap."cost",
-    spap."id",
-    spap."name"
-from
-    snc_python_api_product spap;]]></console>
+      <console name="Diplom" type="STANDARD" schema="public" session="Main"><![CDATA[insert into
+    snc_python_api_product (id, "urlImage", brand, "name", description, "typeProblem")
+    values (35,
+    'https://pcdn.goldapple.ru/p/p/19000003050/web/696d67416464338dad7caebac15eafullhd.webp',
+                           'OLLIN PROFESSIONAL',
+                           'МАСКА ГЛУБОКОЕ УВЛАЖНЕНИЕ ДЛЯ ВОЛОС',
+                            'Маска обеспечивает интенсивное увлажнение как на поверхности, так и в глубоких слоях волоса. После первого применения даже самые безжизненные, ломкие и тусклые волосы заметно преображаются.',
+                           'для всех типов волос');
+
+
+
+select *
+from snc_python_api_product;
+
+
+update snc_python_api_product 
+set brand = 'https://pcdn.goldapple.ru/p/p/19000150131/web/696d674d61696e8dc4cab68d9ce5afullhd.webp'
+where id = 28;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
