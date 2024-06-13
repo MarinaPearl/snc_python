@@ -84,3 +84,9 @@ def getSetsHair(request):
 
     results = [ob.as_json() for ob in listSets]
     return JsonResponse(results, safe=False)
+
+
+def setUserHair(request):
+    user = request.GET['user']
+    print(user)
+    return JsonResponse({'home': 'bar'})

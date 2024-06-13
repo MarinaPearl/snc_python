@@ -27,4 +27,5 @@ urlpatterns = [
     path('diplom_3/', views.diplom_3, name="home"),
     path('getProductWithCondition/', views.getProductWithCondition, name="home"),
     path('getSetsHair/', views.getSetsHair, name="home"),
+    path('setUserHair', views.setUserHair, name="home"),
 ]
